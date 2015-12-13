@@ -73,6 +73,7 @@ public class DoorFrame extends JFrame {
 		{
 			public void actionPerformed(ActionEvent e){
 				String input = textField.getText();
+				
 				FrameLogic.FrameLogic(input);
 			}//end action event
 		});//end action listener
