@@ -1,11 +1,10 @@
 
-public class Controller {
+public class Controller{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		DoorFrame.DoorFrame();
-		
 		
 	}//end end method main
 

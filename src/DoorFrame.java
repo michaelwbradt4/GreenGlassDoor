@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 import javax.swing.JTextField;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 public class DoorFrame extends JFrame {
 
@@ -48,26 +49,32 @@ public class DoorFrame extends JFrame {
 		setBounds(400, 400, 600, 800);
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.GREEN);
-		contentPane.setBackground(Color.GREEN);
+		contentPane.setBackground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblWelcomeToThe = new JLabel("Welcome To The Green Glass Door!");
-		lblWelcomeToThe.setBounds(5, 5, 568, 29);
+		lblWelcomeToThe.setBounds(15, 16, 548, 29);
 		lblWelcomeToThe.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		lblWelcomeToThe.setForeground(Color.GREEN);
 		contentPane.add(lblWelcomeToThe);
 		
 		JLabel lblTypeToSee = new JLabel("Type to see what can enter!");
-		lblTypeToSee.setForeground(Color.BLACK);
+		lblTypeToSee.setForeground(Color.GREEN);
 		lblTypeToSee.setBackground(Color.BLACK);
-		lblTypeToSee.setBounds(5, 34, 195, 689);
+		lblTypeToSee.setBounds(190, 355, 195, 46);
 		contentPane.add(lblTypeToSee);
 		
 		textField = new JTextField();
 		textField.setBounds(215, 415, 146, 26);
 		contentPane.add(textField);
 		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Michael\\Desktop\\temp\\doorpic.jpg"));
+		lblNewLabel.setBounds(0, 0, 578, 728);
+		contentPane.add(lblNewLabel);
 		
 		textField.addActionListener(new ActionListener()
 		{
